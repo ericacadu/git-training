@@ -15,7 +15,7 @@ Practice git skills according to the tasks.
 3. `git reset HEAD` / `git reset HEAD reset.html`
 <br>\# Rest index record before commit
 
-### Rcover File
+### Reset Commit
 1. edit main.html to add some text
 2. `git checkout main.html` # Rest main.html to latest commit
 3. `git add .`
@@ -23,9 +23,22 @@ Practice git skills according to the tasks.
 5. `git reset --hard HEAD^` # Delete latest commit
 6. `git reset --hard ORIG_HEAD` # Recover deleted latest commit
 7. `git reset --soft HEAD^` # Delete latest commit but keep the content
-8. `git commit --amend` # Add content to latest commit
 
 ### Branch
+1. `git branch feature`
+2. `git checkout feature` # Edit somthing and commit
+3. `git checkout master` # Edit somthing and commit
+4. `git merge feature` # Resolve conflict then commit
+5. `git branch -D feature` # Delete branch
+
+### Rebase
+1. `git commit --amend`
+<br>\# Add content to latest commit
+<br>\# If there is no index, enter the commit edit mode
+2. `git rebase -i 234a` # Edit commit record 
+
+
+### Remote
 
 ---
 
